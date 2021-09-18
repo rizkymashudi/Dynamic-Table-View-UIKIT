@@ -13,6 +13,12 @@
 		F52871CF26B783B8005755C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52871CD26B783B8005755C8 /* Main.storyboard */; };
 		F52871D126B783BA005755C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52871D026B783BA005755C8 /* Assets.xcassets */; };
 		F52871D426B783BA005755C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52871D226B783BA005755C8 /* LaunchScreen.storyboard */; };
+		F52871DF26B784D0005755C8 /* JdmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52871DD26B784D0005755C8 /* JdmTableViewCell.swift */; };
+		F52871E026B784D0005755C8 /* JdmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F52871DE26B784D0005755C8 /* JdmTableViewCell.xib */; };
+		F52871E626B78734005755C8 /* DummyJDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52871E526B78734005755C8 /* DummyJDM.swift */; };
+		F52871E826B78740005755C8 /* Jdm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52871E726B78740005755C8 /* Jdm.swift */; };
+		F52871EB26B790B5005755C8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52871E926B790B5005755C8 /* DetailViewController.swift */; };
+		F52871EC26B790B5005755C8 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F52871EA26B790B5005755C8 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		F52871D026B783BA005755C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F52871D326B783BA005755C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F52871D526B783BA005755C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52871DD26B784D0005755C8 /* JdmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JdmTableViewCell.swift; sourceTree = "<group>"; };
+		F52871DE26B784D0005755C8 /* JdmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JdmTableViewCell.xib; sourceTree = "<group>"; };
+		F52871E526B78734005755C8 /* DummyJDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyJDM.swift; sourceTree = "<group>"; };
+		F52871E726B78740005755C8 /* Jdm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jdm.swift; sourceTree = "<group>"; };
+		F52871E926B790B5005755C8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F52871EA26B790B5005755C8 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		F52871C626B783B8005755C8 /* JDMListDynamic */ = {
 			isa = PBXGroup;
 			children = (
-				F52871C726B783B8005755C8 /* AppDelegate.swift */,
-				F52871C926B783B8005755C8 /* SceneDelegate.swift */,
-				F52871CB26B783B8005755C8 /* ViewController.swift */,
-				F52871CD26B783B8005755C8 /* Main.storyboard */,
+				F52871E426B786ED005755C8 /* Base */,
+				F52871E326B786C7005755C8 /* Controller */,
+				F52871E226B786C0005755C8 /* View */,
+				F52871E126B786B8005755C8 /* Model */,
 				F52871D026B783BA005755C8 /* Assets.xcassets */,
-				F52871D226B783BA005755C8 /* LaunchScreen.storyboard */,
 				F52871D526B783BA005755C8 /* Info.plist */,
 			);
 			path = JDMListDynamic;
+			sourceTree = "<group>";
+		};
+		F52871E126B786B8005755C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F52871E526B78734005755C8 /* DummyJDM.swift */,
+				F52871E726B78740005755C8 /* Jdm.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F52871E226B786C0005755C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F52871EA26B790B5005755C8 /* DetailViewController.xib */,
+				F52871DE26B784D0005755C8 /* JdmTableViewCell.xib */,
+				F52871CD26B783B8005755C8 /* Main.storyboard */,
+				F52871D226B783BA005755C8 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F52871E326B786C7005755C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F52871CB26B783B8005755C8 /* ViewController.swift */,
+				F52871DD26B784D0005755C8 /* JdmTableViewCell.swift */,
+				F52871E926B790B5005755C8 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F52871E426B786ED005755C8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F52871C726B783B8005755C8 /* AppDelegate.swift */,
+				F52871C926B783B8005755C8 /* SceneDelegate.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +176,9 @@
 			files = (
 				F52871D426B783BA005755C8 /* LaunchScreen.storyboard in Resources */,
 				F52871D126B783BA005755C8 /* Assets.xcassets in Resources */,
+				F52871EC26B790B5005755C8 /* DetailViewController.xib in Resources */,
 				F52871CF26B783B8005755C8 /* Main.storyboard in Resources */,
+				F52871E026B784D0005755C8 /* JdmTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +190,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F52871CC26B783B8005755C8 /* ViewController.swift in Sources */,
+				F52871E826B78740005755C8 /* Jdm.swift in Sources */,
 				F52871C826B783B8005755C8 /* AppDelegate.swift in Sources */,
 				F52871CA26B783B8005755C8 /* SceneDelegate.swift in Sources */,
+				F52871DF26B784D0005755C8 /* JdmTableViewCell.swift in Sources */,
+				F52871E626B78734005755C8 /* DummyJDM.swift in Sources */,
+				F52871EB26B790B5005755C8 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

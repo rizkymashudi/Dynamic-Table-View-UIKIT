@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="JDMListDynamic" customModuleProvider="target">
+            <connections>
+                <outlet property="descJdm" destination="rzA-rT-ibr" id="CFV-ZF-ooo"/>
+                <outlet property="imageJdm" destination="jhk-k0-37S" id="BIP-g1-sth"/>
+                <outlet property="nameJdm" destination="pTz-Dg-D65" id="yPJ-ec-n3D"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTz-Dg-D65">
+                    <rect key="frame" x="8" y="91" width="374" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Vua-GR-SFl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzA-rT-ibr">
+                    <rect key="frame" x="8" y="421" width="374" height="388"/>
+                    <mutableString key="text">The Mitsubishi Lancer Evolution, commonly referred to as 'Evo',[1] is a sports sedan based on the Lancer that was manufactured by Japanese manufacturer Mitsubishi Motors from 1992 until 2016. There have been ten official versions to date, and the designation of each model is most commonly a Roman numeral. All use two litre turbocharged inline four-cylinder engines and all-wheel drive systems.[2] The Evolution was originally intended only for Japanese markets, but demand on the grey import market led the Evolution series to be offered through Ralliart dealer networks in the United Kingdom and in various European markets from around 1998. Mitsubishi decided to export the eighth generation Evolution to the United States in 2003 after witnessing the success Subaru had in that market with their long-time direct rival, the Subaru Impreza WRX STi.[3] Japanese-spec[citation needed] versions of all Evos until the release of the Evo IX in 2005 were limited by a gentlemen's agreement to advertise no more than 280 PS (206 kW; 276 hp). However, sources say Mitsubishi had already been producing cars with more power but had been underrating the official power outputs in order to be in compliance with the agreement.[4] Therefore, each subsequent version has unofficially evolved above the advertised power figures, with the Japanese-spec Evolution IX reaching an alleged output of around 321 PS (236 kW; 317 hp). Various versions available in other markets, particularly the UK, have official power outputs up to 446 PS (328 kW; 440 hp). The tenth and final generation of the Lancer Evolution (Evo X) was launched in Japan in 2007, and overseas markets in 2008. The Evo X was produced for almost 10 years until it retired in April 2016.</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jhk-k0-37S">
+                    <rect key="frame" x="75" y="155" width="240" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="DAo-kq-new"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="pTz-Dg-D65" firstAttribute="trailing" secondItem="rzA-rT-ibr" secondAttribute="trailing" id="3KC-Ta-yLs"/>
+                <constraint firstItem="pTz-Dg-D65" firstAttribute="leading" secondItem="rzA-rT-ibr" secondAttribute="leading" id="3h5-Nl-ECE"/>
+                <constraint firstItem="jhk-k0-37S" firstAttribute="top" secondItem="pTz-Dg-D65" secondAttribute="bottom" constant="34" id="PxK-5B-8DA"/>
+                <constraint firstItem="pTz-Dg-D65" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="XJN-ja-gy0"/>
+                <constraint firstItem="pTz-Dg-D65" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="47" id="Xz8-rp-ceK"/>
+                <constraint firstAttribute="bottom" secondItem="rzA-rT-ibr" secondAttribute="bottom" constant="35" id="Yiv-LE-pUy"/>
+                <constraint firstItem="pTz-Dg-D65" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="clW-rM-qUC"/>
+                <constraint firstItem="jhk-k0-37S" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="75" id="gK2-6E-w8w"/>
+                <constraint firstItem="pTz-Dg-D65" firstAttribute="centerX" secondItem="jhk-k0-37S" secondAttribute="centerX" id="gpF-PW-ZbB"/>
+                <constraint firstItem="rzA-rT-ibr" firstAttribute="top" secondItem="jhk-k0-37S" secondAttribute="bottom" constant="26" id="vIZ-mH-RVA"/>
+            </constraints>
+            <point key="canvasLocation" x="13" y="117"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
